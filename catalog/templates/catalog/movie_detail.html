@@ -1,0 +1,16 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>Title: {{ movie.title }}</h1>
+    
+    <p><strong>Summary:</strong> {{ movie.summary }}</p>
+    <p><strong>Genres:</strong> {% for genre in movie.genre.all %} {{ genre }}{% if not forloop.last %}, {% endif %}{% endfor %}</p>  
+    <p><strong>Release date:</strong> {{ movie.release_date }}</p> 
+    <p><strong>Official Trailer:</strong></p>
+    <div class="video-container">
+        <iframe width="500" height="300" src="https://www.youtube.com/embed/{{ movie.youtubeid }}" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <p><strong>Author:</strong> <a href=""><a href="">{{ movie.director }}</a></p> <!-- author detail link not yet defined -->
+    <p><strong>Cast:</strong> {% for actor in movie.actor.all %} {{ actor }}{% if not forloop.last %}, {% endif %}{% endfor %}</p>  
+
+{% endblock %}

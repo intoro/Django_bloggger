@@ -1,0 +1,20 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>Director List</h1>
+
+    {% if director_list %}
+    <ul>
+
+      {% for director in director_list %}
+      <li>
+        <a href="{{ director.get_absolute_url }}">{{ director.first_name }} {{ director.last_name }}</a> 
+      </li>
+      {% endfor %}
+
+    </ul>
+    {% else %}
+      <p>There are no directors to show.</p>
+    {% endif %}       
+{% endblock %}
+The view passes the context (list of directors) 

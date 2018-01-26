@@ -1,0 +1,29 @@
+{
+  "name": "movie_app",
+  "version": "1.0.0",
+  "description": "Django based movie app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamDeacon/django-movies.git"
+  },
+  "keywords": [
+    "django",
+    "python",
+    "brunch",
+    "movie",
+    "app"
+  ],
+  "author": "Sam Deacon <deaconsam10@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SamDeacon/django-movies/issues"
+  },
+  "homepage": "https://github.com/SamDeacon/django-movies#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

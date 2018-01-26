@@ -1,0 +1,12 @@
+@import 'variables';
+
+@import 'components/video';
+
+
+body{
+    color: $brand-grey;
+}
+
+p{
+    margin: 0 0 1em 0;
+}

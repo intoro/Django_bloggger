@@ -1,0 +1,17 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>Actor Profile: {{ actor.name }} {{actor.last_name}}</h1>
+    
+    <p><strong>Bio:</strong> {{ actor.bio }}</p>
+    <p><strong>Films starred in:</strong></p>
+    <ul>
+          {% for movie in actor.movie_set.all %}
+          <li>
+              <a href="{{ movie.get_absolute_url }}">{{movie.title}}</a>
+          </li>
+          {% empty %}
+             <!-- no entries -->
+          {% endfor %}
+</ul>
+{% endblock %}

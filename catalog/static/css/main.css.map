@@ -1,0 +1,1 @@
+{"version":3,"sources":["app/main.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"../catalog/static/css/main.css","sourcesContent":["body {\n    font-family: 'Comic Sans MS';\n    \n}\n\nh1{\n    color: red;\n}\n"]}
