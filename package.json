@@ -1,28 +1,27 @@
 {
-  "name": "movie_app",
+  "name": "blog_app",
   "version": "1.0.0",
-  "description": "Django based movie app",
+  "description": "Django based Blogging app",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SamDeacon/django-movies.git"
+    "url": "git+https://github.com/intoro/Django_bloggger"
   },
   "keywords": [
     "django",
     "python",
-    "brunch",
-    "movie",
+    "blog",
     "app"
   ],
-  "author": "Sam Deacon <deaconsam10@gmail.com>",
+  "author": "Intoro <>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SamDeacon/django-movies/issues"
+    "url": "https://github.com/intoro/Django_bloggger/issues"
   },
-  "homepage": "https://github.com/SamDeacon/django-movies#readme",
+  "homepage": "https://github.com/intoro/Django_bloggger/",
   "devDependencies": {
     "gulp": "^3.9.1"
   }
