@@ -1,0 +1,18 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<div class="" style="text-align:center; margin-left:-250px;">
+    <h1>{{ article.title }}</h1>
+    <p><strong></strong> <img style="height:200px;" src="{{ article.poster }}"></p>
+    <p><strong>Summary:</strong> {{ article.summary }}</p>
+    <p><strong>Genres:</strong> {% for genre in article.genre.all %} {{ genre }}{% if not forloop.last %}, {% endif %}{% endfor %}</p>
+    <p><strong>Release date:</strong> {{ article.release_date }}</p>
+    <p><strong>Official Trailer:</strong></p>
+    <p><strong>Author:</strong> <a href=""><a href="">{{ article.director }}</a></p> <!-- author detail link not yet defined -->
+    <p><strong>Cast:</strong> {% for actor in article.actor.all %} {{ actor }}{% if not forloop.last %}, {% endif %}{% endfor %}</p>
+</div>
+<div class="video-container">
+    <iframe style="height:200px; margin-left:0px:" src="https://www.youtube.com/embed/{{ article.youtubeid }}" frameborder="0" allowfullscreen></iframe>
+</div>
+
+{% endblock %}
